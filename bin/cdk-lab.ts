@@ -6,7 +6,7 @@ import { PipelineStack } from "../lib/pipeline-stack";
 const app = new cdk.App();
 
 // Lambda + API Gateway stack
-new CdkLabStack(app, "CdkAssignmentStack", {
+new CdkLabStack(app, "CdkLabStack", {
   env: { account: "954847476805", region: "us-east-1" },
 });
 
