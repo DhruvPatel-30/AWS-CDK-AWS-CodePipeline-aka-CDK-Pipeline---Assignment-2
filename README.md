@@ -39,7 +39,7 @@ The following resources are created:
 
 ### 2.1 S3 Bucket
 
-- **Bucket Name:** `dhruv1-MyStudentBucket-cdk-bucket`
+- **Bucket Name:** `dhruv1-954847476805-cdk-bucket`
 - **Purpose:** Store files
 - **Configuration:** Simple bucket for assignment requirements
 
