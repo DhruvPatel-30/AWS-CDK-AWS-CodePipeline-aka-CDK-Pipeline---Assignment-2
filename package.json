@@ -1,8 +1,8 @@
 {
-  "name": "aws-cdk-aws-code_pipeline-aka-cdk-pipeline---assignment-2",
+  "name": "cdk---cloud_formation---aws-code_pipeline",
   "version": "0.1.0",
   "bin": {
-    "aws-cdk-aws-code_pipeline-aka-cdk-pipeline---assignment-2": "bin/aws-cdk-aws-code_pipeline-aka-cdk-pipeline---assignment-2.js"
+    "cdk---cloud_formation---aws-code_pipeline": "bin/cdk---cloud_formation---aws-code_pipeline.js"
   },
   "scripts": {
     "build": "tsc",

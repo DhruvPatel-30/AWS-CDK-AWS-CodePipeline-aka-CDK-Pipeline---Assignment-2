@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/aws-cdk-aws-code_pipeline-aka-cdk-pipeline---assignment-2.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/cdk-lab.ts",
   "watch": {
     "include": [
       "**"
