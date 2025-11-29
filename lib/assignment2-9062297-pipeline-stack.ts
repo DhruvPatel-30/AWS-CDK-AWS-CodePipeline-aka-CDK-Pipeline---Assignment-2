@@ -11,32 +11,22 @@ export class Assignment2PipelineStack9062297 extends cdk.Stack {
 
     const pipeline = new CodePipeline(this, `${prefix}-pipeline`, {
       pipelineName: `${prefix}-pipeline`,
-
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.connection(
           'DhruvPatel-30/AWS-CDK-AWS-CodePipeline-aka-CDK-Pipeline---Assignment-2',
           'main',
           {
-            connectionArn:
-              'arn:aws:codeconnections:us-east-2:954847476805:connection/f161276a-e4ba-4454-abca-367bcc294547',
+            connectionArn: 'arn:aws:codeconnections:us-east-2:954847476805:connection/f161276a-e4ba-4454-abca-367bcc294547'
           }
         ),
-        commands: [
-          'npm ci',
-          'npm run build',
-          'npx cdk synth'
-        ],
+        commands: ['npm ci', 'npm run build', 'npx cdk synth'],
       }),
     });
 
-    // ---------------------------
-    // Deployment Stage
-    // ---------------------------
     pipeline.addStage(
       new (class extends cdk.Stage {
-        constructor(scope: Construct, stageId: string) {
-          super(scope, stageId);
-
+        constructor(scope: Construct, id: string) {
+          super(scope, id);
           new Assignment2Stack9062297(this, `${prefix}-app-stack`);
         }
       })(this, 'DeployStage')
