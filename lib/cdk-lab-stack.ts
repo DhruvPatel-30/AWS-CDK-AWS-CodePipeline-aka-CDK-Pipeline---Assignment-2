@@ -20,7 +20,7 @@ export class CdkLabStack extends cdk.Stack {
 
     // --- DynamoDB Table ---
     const myTable = new dynamodb.Table(this, "MyDynamoDBTable", {
-      tableName: "MyDyTable_Assignment2_9062297",
+      tableName: "MyDyTable_Assignment2_9062297_v2",
       partitionKey: { name: "id", type: dynamodb.AttributeType.STRING },
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });

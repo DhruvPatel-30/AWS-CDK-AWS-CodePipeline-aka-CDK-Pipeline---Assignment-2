@@ -6,12 +6,12 @@ import { PipelineStack } from "../lib/pipeline-stack";
 const app = new cdk.App();
 
 // Lambda + API Gateway stack
-new CdkLabStack(app, "CdkLabStack", {
+new CdkLabStack(app, "CdkAssignmentStack", {
   env: { account: "954847476805", region: "us-east-1" },
 });
 
 // CodePipeline stack
-new PipelineStack(app, "PipelineStack", {
+new PipelineStack(app, "PipelineAssignmentStack", {
   githubConnectionArn: "arn:aws:codeconnections:us-east-2:954847476805:connection/f161276a-e4ba-4454-abca-367bcc294547",
   owner: "DhruvPatel-30",
   repo: "AWS-CDK-AWS-CodePipeline-aka-CDK-Pipeline---Assignment-2",
