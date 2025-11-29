@@ -13,14 +13,14 @@ export class CdkLabStack extends cdk.Stack {
 
     // --- S3 Bucket ---
     const myBucket = new s3.Bucket(this, "MyStudentBucket", {
-      bucketName: `dhruv-${this.account}-cdk-bucket`,
+      bucketName: `dhruv1-${this.account}-cdk-bucket`,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
     });
 
     // --- DynamoDB Table ---
     const myTable = new dynamodb.Table(this, "MyDynamoDBTable", {
-      tableName: "MyDyTable_Assignment2_9062297_v3",
+      tableName: "MyDyTable_Assignment2_Dhruv",
       partitionKey: { name: "id", type: dynamodb.AttributeType.STRING },
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
